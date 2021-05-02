@@ -1,5 +1,5 @@
-# Dji-TelloPy-PoseEstimation-FaceTracking
-Dji TelloPy Pose estimation and FaceTracking 
+# Dji TelloPy Pose estimation and FaceTracking
+ 
 L’obiettivo di questo progetto è stato quello di sviluppare il software necessario per controllare gli spostamenti del drone DJITello mediante il riconoscimento facciale e il riconoscimento delle pose della persona inquadrata dalla camera del drone. Si è realizzato, in particolare, un software che consenta al drone di mantenere l’inquadratura dei soggetti durante il moto e che permetta inoltre di comandare gli spostamenti del drone in base a determinate posizioni delle braccia che il drone è in grado di riconoscere
 
 # Pose estimation
