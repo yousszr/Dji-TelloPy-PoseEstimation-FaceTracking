@@ -24,5 +24,22 @@ La libreria utilizzata per effettuare la pose recognition è quella presente al 
 3.   In  questo  stato  il  drone  esegue  la  mossa  impostata  per  poi  tornare  nello  stato  difacetracking;4.  infine questo stato è quello in cui il drone esegue la procedura di terminazione e termina. 
 
 
+# Configurazione ambiente 
+
+  * Creazione  dell'env
+      - virtualenv --python=/usr/bin/python3.7m DjiTelloPose
+  * Clonare la repository all'interlo dell'env
+  * Eseguire il source 
+      - source bin/activate
+  * Installare i requirements
+      - pip3 install -r requirements.txt  
+
+
 # Avvio del programma
+
+  * eseguire il source
+      - source bin/activate
+
+  * Avviare il programma tramite il seguente comando
+      ./run.sh
 
