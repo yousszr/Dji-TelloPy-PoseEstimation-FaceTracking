@@ -14,7 +14,7 @@ La libreria utilizzata per effettuare la pose recognition è quella presente al 
 # Controllo
 
  Il controllo del drone avviene mediante una macchina a stati finiti 
-![](https://github.com/yousszr/Dji-TelloPy-PoseEstimation-FaceTracking/tree/main/docs/stati.png)
+![plot](https://github.com/yousszr/Dji-TelloPy-PoseEstimation-FaceTracking/tree/main/docs/stati.PNG)
  
 
 0.  in questo stato il drone è acceso ed è in attesa del segnale di avvio che viene dato coprendoe scoprendo ad intermittenza la camera
