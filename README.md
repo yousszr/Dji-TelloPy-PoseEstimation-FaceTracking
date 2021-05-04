@@ -1,4 +1,7 @@
 # Dji TelloPy Pose estimation and FaceTracking
+
+
+![](/docs/drone_gif.gif)
  
 L’obiettivo di questo progetto è stato quello di sviluppare il software necessario per controllare gli spostamenti del drone DJITello mediante il riconoscimento facciale e il riconoscimento delle pose della persona inquadrata dalla camera del drone. Si è realizzato, in particolare, un software che consenta al drone di mantenere l’inquadratura dei soggetti durante il moto e che permetta inoltre di comandare gli spostamenti del drone in base a determinate posizioni delle braccia che il drone è in grado di riconoscere
 
@@ -10,8 +13,10 @@ La libreria utilizzata per effettuare la pose recognition è quella presente al 
 
 # Controllo
 
- Il controllo del drone avviene mediante una macchina a stati finiti 
- aggiungere immagine
+ Il controllo del drone avviene mediante una macchina a stati finiti
+ 
+<img src="/docs/stati.PNG" width=500>
+ 
 
 0.  in questo stato il drone è acceso ed è in attesa del segnale di avvio che viene dato coprendoe scoprendo ad intermittenza la camera
 1.   In questo stato il drone entra nello stato di facetracking e pose recognition dove il dronesegue la faccia della persone di fronte e cerca di riconoscere la posa corrispondente;
@@ -19,5 +24,22 @@ La libreria utilizzata per effettuare la pose recognition è quella presente al 
 3.   In  questo  stato  il  drone  esegue  la  mossa  impostata  per  poi  tornare  nello  stato  difacetracking;4.  infine questo stato è quello in cui il drone esegue la procedura di terminazione e termina. 
 
 
+# Configurazione ambiente 
+
+  * Creazione  dell'env
+      - virtualenv --python=/usr/bin/python3.7m DjiTelloPose
+  * Clonare la repository all'interlo dell'env
+  * Eseguire il source 
+      - source bin/activate
+  * Installare i requirements
+      - pip3 install -r requirements.txt  
+
+
 # Avvio del programma
+
+  * eseguire il source
+      - source bin/activate
+
+  * Avviare il programma tramite il seguente comando
+      ./run.sh
 
