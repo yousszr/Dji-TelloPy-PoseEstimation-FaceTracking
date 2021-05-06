@@ -1,7 +1,7 @@
 # Dji TelloPy Pose estimation and FaceTracking
 
+<img src="/docs/drone_gif.gif" width="800" height="400"/>
 
-![](/docs/drone_gif.gif)
  
 L’obiettivo di questo progetto è stato quello di sviluppare il software necessario per controllare gli spostamenti del drone DJITello mediante il riconoscimento facciale e il riconoscimento delle pose della persona inquadrata dalla camera del drone. Si è realizzato, in particolare, un software che consenta al drone di mantenere l’inquadratura dei soggetti durante il moto e che permetta inoltre di comandare gli spostamenti del drone in base a determinate posizioni delle braccia che il drone è in grado di riconoscere.
 
@@ -18,19 +18,17 @@ La libreria utilizzata per effettuare la pose recognition è quella presente al 
 <img src="/docs/stati.PNG" width=500>
  
 
-0.   Stato in cui il drone è acceso ed è in attesa del segnale di avvio che viene dato coprendo e scoprendo ad intermittenza la camera.
-1.   Stato in cui il drone entra nello stato di facetracking e pose recognition dove il dronesegue la faccia della persone di fronte e cerca di riconoscere la posa corrispondente.
+0.   Stato in cui  il  drone  è  acceso  ed  è  in  attesa  del  segnale  di  avvio  che  viene  datocoprendo e scoprendo ad intermittenza la camera;
+1.  entra nello stato di facetracking e pose recognition dove il drone segue la faccia della persone di fronte e cerca di riconoscere la posa; una volta riconosciuta eseguue l’azione corrispondente
 2.   Stato in cui il drone, quando non trova una persona di fronte a sé, entra in uno stato diricerca dove controlla attorno per trovare la persona di cui fare pose recognition;
-3.   Stato in cui il  drone  esegue  la  mossa  impostata  per  poi  tornare  nello  stato  di facetracking.
-4.   Stato in cui il drone esegue l'atterraggio e termina il programma. 
+3.   Stato in cui il drone esegue l'atterraggio e termina il programma. 
 
-
-# Configurazione ambiente 
+# Configurazione ambiente (Linux)
 
   * Creazione  dell'env
       - virtualenv --python=/usr/bin/python3.7m DjiTelloPose
   * Clonare la repository all'interlo dell'env
-  * Eseguire il source 
+  * Attivare l'ambiente virtuale 
       - source bin/activate
   * Installare i requirements
       - pip3 install -r requirements.txt  
@@ -38,7 +36,7 @@ La libreria utilizzata per effettuare la pose recognition è quella presente al 
 
 # Avvio del programma
 
-  * eseguire il source
+  * Attivare l'ambiente virtuale
       - source bin/activate
 
   * Avviare il programma tramite il seguente comando
