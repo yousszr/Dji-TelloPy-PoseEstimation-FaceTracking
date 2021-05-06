@@ -23,6 +23,16 @@ La libreria utilizzata per effettuare la pose recognition è quella presente al 
 2.   Stato in cui il drone, quando non trova una persona di fronte a sé, entra in uno stato diricerca dove controlla attorno per trovare la persona di cui fare pose recognition;
 3.   Stato in cui il drone esegue l'atterraggio e termina il programma. 
 
+# Avvertimenti e Precauzioni
+
+
+  * Utilizzare il programma in ambienti ben illuminati e indossare indumenti che non si confondino con i colori della stanza.
+  * Il drone risponderà correttamente ai comandi solo se viene rilevata un'unica persona all'interno del frame
+  * Evitare stanze con specchi o superfici che possono riflettere il vostro corpo
+  * All'avvio del programma, evitare di fare movimenti casuali con le braccia.
+  * Se la batteria è minore del 70\%, il drone non esegue i flip a destra e a sinistra.
+
+
 # Configurazione ambiente (Linux)
 
   * Creazione  dell'env
