@@ -2,6 +2,7 @@ from djitellopy import tello
 import cv2
 from simple_pid import PID
 import math
+import time
 
 
 class PoseMover:
@@ -74,5 +75,6 @@ class PoseMover:
 
     def take_photo(self):
         """Take a photo from video"""
+        date_string = time.strftime("%Y-%m-%d-%H:%M")
         frame_read = self.drone.get_frame_read()
-        cv2.imwrite("picture.png", frame_read.frame)
+        cv2.imwrite(f"drone_{date_string }.png", frame_read.frame)
